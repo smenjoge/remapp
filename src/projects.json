@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "name": "Travel Search",
+            "description": "This app lets users search for place by city name, address or zip code. Based on the search result, current weather for that location is displayed. User is also recommended an activity or places to visit based on the weather coditions.",
+            "tech": "HTML, CSS, Javascript, bootstrap, jQuery ",
+            "screenshot": [
+                {   
+                    "label": "Travel Search Home Page",
+                    "imgPath": "../src/assets/TravelSearch.PNG"
+                }
+            ],
+            "appLink": "https://smenjoge.github.io/couchpuble/",
+            "repoLink": "https://github.com/smenjoge/couchpuble"
+        },
+        {
+            "name": "MovieGOAT",
+            "description": "Movie Review app lets users search for their favorite movies. Then they can choose to write their own review for the movie or read reviews submitted by other users. User can also like/dislike reviews.",
+            "tech": "HTML, CSS, Javascript, bootstrap, jQuery, NodeJs, Express, MySQL, Sequelize",
+            "screenshot": [
+                {   
+                    "label": "Search Movie",
+                    "imgPath": "./src/assets/MovieGoat.PNG"
+                },
+                {   
+                    "label": "Reviews Page",
+                    "imgPath": "./src/assets/MovieGoat2.PNG"
+                }
+            ],
+            "appLink": "https://bearded-canoe-44705.herokuapp.com/",
+            "repoLink": "https://github.com/smenjoge/Project2"
+        },
+        {
+            "name": "Fitness Tracker",
+            "description": "This app lets user to view, create and track daily workouts. User can log multiple exercises in a workout on a given day. ",
+            "tech": "HTML, CSS, Javascript, bootstrap, jQuery, NodeJs, Express, MongoDB, Mongoose",
+            "screenshot": [
+                {   
+                    "label": "Home Page",
+                    "imgPath": "./src/assets/FitnessTracker1.PNG"
+                },
+                {   
+                    "label": "Report Page",
+                    "imgPath": "./src/assets/FitnessTracker2.PNG"
+                }
+            ],
+            "appLink": "https://stark-inlet-96284.herokuapp.com/",
+            "repoLink": "https://github.com/smenjoge/nanchanium"
+        },
+        {
+            "name": "Eat-Da-Burger",
+            "description": "User can add a Burger, Delete a burger, Devour a burger. Based on the status, the particular burger will disply on the page in appropriate section.",
+            "tech": "HTML, CSS, Javascript, bootstrap, jQuery, NodeJs, Express, MySQL",
+            "screenshot": [
+                {   
+                    "label": "Home Page",
+                    "imgPath": "./src/assets/EatDaBurger.PNG"
+                }
+            ],
+            "appLink": "https://limitless-mountain-78835.herokuapp.com/",
+            "repoLink": "https://github.com/smenjoge/burger"
+        }
+    ]
+}

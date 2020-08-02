@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+    /* For XS screens show margin on left/right */
+    .container {
+        margin: auto 10px;
+    }
+}

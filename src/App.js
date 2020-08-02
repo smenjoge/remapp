@@ -1,25 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  // const {currentPage, setCurrentPage } = useState("/");
+
+  // useEffect(() => {
+  //   setCurrentPage(currentPage);
+  // }, []);
+
+  window.addEventListener("resize", () => setWindowSize(window.innerWidth));
+
+  function contactFormSubmit() {
+    alert("Thank You for reaching out. I will respond to your message as soon as possible!");
+    window.location.reload();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+            <Route exact path={["/", "/about"]}>
+                <About windowSize={windowSize}/>
+            </Route>
+            <Route exact path="/contact">
+                <Contact contactFormSubmit={contactFormSubmit}/>
+            </Route>
+            <Route exact path="/portfolio">
+                <Portfolio />
+            </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

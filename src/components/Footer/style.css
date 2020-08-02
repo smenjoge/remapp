@@ -1,0 +1,10 @@
+footer {
+    color: white;
+    background-color: dimgray;
+    border-top: 5px solid rgb(5, 124, 124);
+}
+
+.bd-footer-links li {
+    display: inline;
+    margin-left: 1rem;
+}
