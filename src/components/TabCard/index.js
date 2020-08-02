@@ -11,7 +11,7 @@ function TabCard(props) {
     // const screenshot = props.screenshot;
     console.log(`TabCard images`, screenshot);
     return (
-        <div className="card" style={{"width": "18rem"}}>
+        <div className="card" style={{"width": "18rem", "z-index": -1}}>
             {/* <img src="..." className="card-img-top" alt="..."></img> */}
             <ImageStepper images={screenshot}/>
             <div className="card-body">
