@@ -4,7 +4,7 @@ import "./style.css";
 
 function Footer() {
     return (
-        <footer className="footer mt-auto py-3 bg-dark" style={{"z-index": 10}}>
+        <footer className="footer mt-auto py-3 bg-dark">
             <div className="container-fluid text-center">
                 <ul className="bd-footer-links">
                     <li><a href="https://www.facebook.com/sandesh.menjoge" target="_blank" rel="noopener noreferrer">FaceBook</a></li>

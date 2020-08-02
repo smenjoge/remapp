@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div style={{"position":"relative"}}>
         <Navbar />
         <Switch>
             <Route exact path={["/", "/about"]}>
@@ -35,6 +35,9 @@ function App() {
             <Route exact path="/portfolio">
                 <Portfolio />
             </Route>
+            <Route>
+              <About windowSize={windowSize}/>
+          </Route>
         </Switch>
         <Footer />
       </div>

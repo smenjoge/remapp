@@ -10,7 +10,7 @@ function Portfolio() {
     return (
         <div className="container mt-3">
             <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 border p-5 bg-white">
+                <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10 border p-5 bg-white">
                     <PageHeading>Portfolio</PageHeading>
                     <VerticalTabs projects={projects} />
                     {/* placeholder column for screen sizes large and xl  */}

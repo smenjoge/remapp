@@ -7,7 +7,7 @@
             "screenshot": [
                 {   
                     "label": "Travel Search Home Page",
-                    "imgPath": "../src/assets/TravelSearch.PNG"
+                    "imgPath": "https://github.com/smenjoge/remapp/blob/master/src/assets/TravelSearch.PNG?raw=true"
                 }
             ],
             "appLink": "https://smenjoge.github.io/couchpuble/",
@@ -20,11 +20,11 @@
             "screenshot": [
                 {   
                     "label": "Search Movie",
-                    "imgPath": "./src/assets/MovieGoat.PNG"
+                    "imgPath": "https://github.com/smenjoge/remapp/blob/master/src/assets/MovieGoat.PNG?raw=true"
                 },
                 {   
                     "label": "Reviews Page",
-                    "imgPath": "./src/assets/MovieGoat2.PNG"
+                    "imgPath": "https://github.com/smenjoge/remapp/blob/master/src/assets/MovieGoat2.PNG?raw=true"
                 }
             ],
             "appLink": "https://bearded-canoe-44705.herokuapp.com/",
@@ -37,11 +37,11 @@
             "screenshot": [
                 {   
                     "label": "Home Page",
-                    "imgPath": "./src/assets/FitnessTracker1.PNG"
+                    "imgPath": "https://github.com/smenjoge/remapp/blob/master/src/assets/FitnessTracker1.PNG?raw=true"
                 },
                 {   
                     "label": "Report Page",
-                    "imgPath": "./src/assets/FitnessTracker2.PNG"
+                    "imgPath": "https://github.com/smenjoge/remapp/blob/master/src/assets/FitnessTracker2.PNG?raw=true"
                 }
             ],
             "appLink": "https://stark-inlet-96284.herokuapp.com/",
@@ -54,7 +54,7 @@
             "screenshot": [
                 {   
                     "label": "Home Page",
-                    "imgPath": "./src/assets/EatDaBurger.PNG"
+                    "imgPath": "https://github.com/smenjoge/remapp/blob/master/src/assets/EatDaBurger.PNG?raw=true"
                 }
             ],
             "appLink": "https://limitless-mountain-78835.herokuapp.com/",

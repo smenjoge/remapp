@@ -35,7 +35,6 @@ function ImageStepper(props) {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const {images} = props;
-  console.log(`Images Props `, images);
   const maxSteps = images.length;
 
   const handleStepChange = (step) => {
@@ -43,7 +42,7 @@ function ImageStepper(props) {
   };
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{"width":"100%", "height":"auto", "border": "1px solid"}}>
       <Paper square elevation={0} className={classes.header}>
         <Typography>{images[activeStep].label}</Typography>
       </Paper>

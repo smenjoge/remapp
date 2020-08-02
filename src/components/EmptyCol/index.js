@@ -2,7 +2,7 @@ import React from "react";
 
 function EmptyCol() {
     return (
-        <div className="col-lg-4 col-xl-4">
+        <div className="col-lg-2 col-xl-2">
         </div>
     )
 }

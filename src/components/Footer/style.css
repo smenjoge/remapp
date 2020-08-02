@@ -2,6 +2,10 @@ footer {
     color: white;
     background-color: dimgray;
     border-top: 5px solid rgb(5, 124, 124);
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;  */
+
 }
 
 .bd-footer-links li {

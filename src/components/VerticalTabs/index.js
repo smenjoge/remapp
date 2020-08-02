@@ -62,25 +62,27 @@ function VerticalTabs(props) {
   };
 
   return (
-    <div className={classes.root}>
-      <Tabs
-        orientation="vertical"
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Vertical tabs example"
-        className={classes.tabs}
-      >
+    // <div className="row">
+        <div className={classes.root} style={{"height": "fit-content"}}>
+        <Tabs
+            orientation="vertical"
+            variant="scrollable"
+            value={value}
+            onChange={handleChange}
+            aria-label="Vertical tabs example"
+            className={classes.tabs}
+        >
+            {projects.map((project, index) => 
+            <Tab label={project.name} key={index} {...a11yProps(index)}>{project.name}</Tab>
+            )}
+        </Tabs>
         {projects.map((project, index) => 
-        <Tab label={project.name} key={index} {...a11yProps(index)}>{project.name}</Tab>
-        )}
-      </Tabs>
-      {projects.map((project, index) => 
-            <TabPanel value={value} key={index} index={index}>
-                <TabCard project={project} />
-            </TabPanel>
-        )}
-    </div>
+                <TabPanel value={value} key={index} index={index}>
+                    <TabCard project={project} />
+                </TabPanel>
+            )}
+        </div>
+    // </div>
   );
 }
 
