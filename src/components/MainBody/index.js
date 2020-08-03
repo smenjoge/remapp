@@ -20,7 +20,7 @@ function MainBody(props) {
                 />
                 <p> My name is Sandesh Menjoge. I am a Software developer based in NYC. I have over {calculateTotalExp()} years of Software development experience in Investment Banking and Insurance domain. I am currenly learning to be a Full stack web developer with Rutgers University bootcamp program.</p>
                 <p> I completed Bachelor's degree in Electronics and Communication Engineering from Nagpur University, India in 2005. After graduation I immediately started working as a Entry level software developer in Infosys Technologies. </p>
-                <p> I have strong coding, analytical and problem solving abilities and have used my skills and experience to deliver in multiple client critical and time sensitive scenarios.</p>
+                <p> I have strong coding, analytical and problem solving abilities and have used my skills and experience to deliver on multiple occasions in critical and time sensitive scenarios.</p>
             </div>
         </div>
     )
