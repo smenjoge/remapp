@@ -7,7 +7,7 @@ import EmptyCol from "../components/EmptyCol";
 function About(props) {
     const {windowSize} = props;
     return (
-        <div className="container mt-3">
+        <div className="container mt-3" style={{"paddingBottom": "130px"}}>
             <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 border p-5 bg-white">
                     <PageHeading>About</PageHeading>
