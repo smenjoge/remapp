@@ -18,9 +18,9 @@ function MainBody(props) {
                 <img src={photo} alt="bio.jpg"
                     className={windowSize < 768 ? "mb-3 img-full-wdth" : "float-left img-flt mr-3 mb-3"}
                 />
-                <p> My name is Sandesh Menjoge. I am a Software developer based in NYC. I have over {calculateTotalExp()} years of Software development experience in Investment Banking and Insurance domain. I am currenly learning to be a Full stack web developer as part of Rutgers University bootcamp program.</p>
-                <p> I have a Bachelor's degree in Electronics and Communication Engineering from Nagpur University in India. I completed by studies in 2005 and started my first job immediately after in one of India's leading Software services company. </p>
-                <p> When not working, I like to play cricket or soccer. When in India, I led of my company's cricket team where we finished the season unbeaten. In other hobbies, I like to jump out of perfectly working aeroplanes. I have logged more than 120 jumps so far. </p>
+                <p> My name is Sandesh Menjoge. I am a Software developer based in NYC. I have over {calculateTotalExp()} years of Software development experience in Investment Banking and Insurance domain. I am currenly learning to be a Full stack web developer with Rutgers University bootcamp program.</p>
+                <p> I completed Bachelor's degree in Electronics and Communication Engineering from Nagpur University, India in 2005. After graduation I immediately started working as a Entry level software developer in Infosys Technologies. </p>
+                <p> I have strong coding, analytical and problem solving abilities and have used my skills and experience to deliver in multiple client critical and time sensitive scenarios.</p>
             </div>
         </div>
     )

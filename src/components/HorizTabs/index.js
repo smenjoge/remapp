@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
@@ -14,8 +15,8 @@ function TabPanel(props) {
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
+      id={`scrollable-auto-tabpanel-${index}`}
+      aria-labelledby={`scrollable-auto-tab-${index}`}
       {...other}
     >
       {value === index && (
@@ -35,24 +36,20 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    id: `scrollable-auto-tab-${index}`,
+    'aria-controls': `scrollable-auto-tabpanel-${index}`,
   };
 }
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    width: '100%',
     backgroundColor: theme.palette.background.paper,
-    display: 'flex',
-    height: 224,
-  },
-  tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`,
   },
 }));
 
-function VerticalTabs(props) {
+function HorizTabs(props) {
   const {projects} = props;
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -62,28 +59,29 @@ function VerticalTabs(props) {
   };
 
   return (
-    // <div className="row">
-        <div className={classes.root} style={{"height": "fit-content"}}>
+    <div className={classes.root} style={{"height": "fit-content"}}>
+      <AppBar position="static" color="default">
         <Tabs
-            orientation="vertical"
-            variant="scrollable"
-            value={value}
-            onChange={handleChange}
-            aria-label="Vertical tabs example"
-            className={classes.tabs}
+          value={value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="scrollable auto tabs example"
         >
             {projects.map((project, index) => 
-            <Tab label={project.name} key={index} {...a11yProps(index)}>{project.name}</Tab>
+                <Tab label={project.name} key={index} {...a11yProps(index)} />
             )}
         </Tabs>
-        {projects.map((project, index) => 
+      </AppBar>
+      {projects.map((project, index) => 
                 <TabPanel value={value} key={index} index={index}>
                     <TabCard project={project} />
                 </TabPanel>
-            )}
-        </div>
-    // </div>
+        )}
+    </div>
   );
 }
 
-export default VerticalTabs;
+export default HorizTabs;

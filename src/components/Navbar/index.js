@@ -11,7 +11,7 @@ function Navbar() {
             </Link>
             <div className="navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav" id="links-in-nav">
-                    <Link to="/about" className={location.pathname === "/" || location.pathname === "/about" ? "nav-item nav-link active" :"nav-item nav-link" }>
+                    <Link to="/about" className={location.pathname === "/" || location.pathname === "/about" || location.pathname === "/remapp"? "nav-item nav-link active" :"nav-item nav-link" }>
                         About
                     </Link>
                     <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-item nav-link active" :"nav-item nav-link" }>

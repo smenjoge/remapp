@@ -42,7 +42,7 @@ function ImageStepper(props) {
   };
 
   return (
-    <div className={classes.root} style={{"width":"100%", "height":"auto", "border": "1px solid"}}>
+    <div className={classes.root} style={{"width":"100%", "height":"auto", "marginTop":"2%", "border": "1px outset"}}>
       <Paper square elevation={0} className={classes.header}>
         <Typography>{images[activeStep].label}</Typography>
       </Paper>

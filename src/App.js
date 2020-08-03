@@ -8,11 +8,6 @@ import Footer from "./components/Footer";
 
 function App() {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
-  // const {currentPage, setCurrentPage } = useState("/");
-
-  // useEffect(() => {
-  //   setCurrentPage(currentPage);
-  // }, []);
 
   window.addEventListener("resize", () => setWindowSize(window.innerWidth));
 
@@ -23,7 +18,7 @@ function App() {
 
   return (
     <Router>
-      <div style={{"position":"relative"}}>
+      <div>
         <Navbar />
         <Switch>
             <Route exact path={["/", "/about"]}>
